@@ -35,11 +35,13 @@ export const Pokemon = () => {
     pokemonApi();
   }, []); // Empty dependency array ensures this effect runs only once
 
+  //   search filtered data
   const filteredValue = pokemonAll.filter((currPokemon) => {
     return currPokemon.name.toLowerCase().includes(search.toLowerCase());
   });
   console.log(filteredValue);
 
+  //   loading state show
   if (loading) {
     return (
       <div className="container-[100%] bg-blue-50">
@@ -49,6 +51,7 @@ export const Pokemon = () => {
       </div>
     );
   }
+  //   error state show
   if (error) {
     return (
       <div className="container-[100%] bg-blue-50">
