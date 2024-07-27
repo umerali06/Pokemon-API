@@ -60,7 +60,7 @@ export const Pokemon = () => {
   }
 
   return (
-    <div className="container-[100%] bg-blue-50 py-6 min-h-[100vh]">
+    <div className="container-[100%] bg-blue-50 py-6 min-h-[100vh] ">
       <div className="container mx-auto py-4 text-center sm:px-10 px-16">
         <h1 className="text-center font-bold my-5">Catch pokemons</h1>
         <input
